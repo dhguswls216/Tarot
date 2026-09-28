@@ -16,6 +16,34 @@
     "plugins": [{ "name": "next" }],
     "paths": { "@/*": ["./*"] }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "korean-lunar-calendar.d.ts",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "lib/**/*.ts",
+    "lib/**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "interpret.ts",
+    "analyze.ts",
+    "lunar.ts",
+    "numerology.ts",
+    "tarot.ts",
+    "types.ts",
+    "actions.ts",
+    "layers.ts",
+    "numbers.ts",
+    "page.tsx",
+    "layout.tsx",
+    "AnalyzeForm.tsx",
+    "ReportView.tsx",
+    "SiteHeader.tsx",
+    "route.ts",
+    "**/*.test.ts"
+  ]
 }
